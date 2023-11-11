@@ -1,0 +1,324 @@
+body{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    background-color: #fefeff;
+}
+a{
+    color:rgb(5, 5, 20);
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.contenidoPrincipal{
+    /*tamaño de la página*/
+    width: 90%;
+    /*centrar elementos*/
+    margin:auto;
+}
+
+/*Estilo de navegacion*/
+.navegacionPrincipal{
+    font-size: 18px;
+    /*permite organizar los elementos*/
+    display:flex;
+    /*Sirve para utilizar todo el ancho disponible*/
+    justify-content: space-between;
+    /*centrar los elementos*/
+    align-items: 70px;
+    padding: 20px 0;
+}
+
+hr{
+    margin:10px 0;
+}
+
+.menuBotton{
+    cursor:pointer;
+    position:absolute;
+    top:15px;
+    right:30px;
+    z-index:2;
+    /*ocultar el elemento*/
+    display: none;
+}
+
+.navLogo{
+    width:60px;
+}
+
+/*formato para navegación izquierda*/
+.navegacionPrincipal ul{
+    display: flex;
+}
+
+.navegacionPrincipal ul li{
+    padding: 10px;
+}
+
+.navegacionPrincipal ul li a{
+    padding: 2px;
+}
+
+.navegacionPrincipal ul li a:hover{
+    border-bottom: 5px solid rgb(253, 8, 0);
+}
+
+.navegacionPrincipal ul.navMenu{
+    flex: 1;
+    margin-left: 20px;
+}
+.boton{
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: black;
+    color: whitesmoke;
+    font-size: 15px;
+    border: 5px solid rgb(255, 255, 255);
+    margin: 10px 0;
+}
+
+.boton:hover{
+    opacity: 0.5;
+}
+
+.muestraEncabezado h2,
+.muestraEncabezado p{
+    margin-bottom: 10pxn;
+}
+
+/*Imagenes del Tema*/
+.temaImagenes{
+    /* se prepara para una cuadricula */
+    display: grid;
+    /* permite crear columnas */
+    grid-template-columns: repeat(4, 1fr);
+    /* espaciado interno */
+    gap: 25px;
+    margin: 70px 0;
+}
+
+.temaImagenes img{
+    width: 100%;
+    height: 180px;
+}
+
+.temaImagenes h3{
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+.temaImagenes p{
+    text-align: justify;
+}
+
+.temaImagenes a{
+    padding: 10px 0;
+    color: rgb(0, 4, 255);
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.temaImagenes a:hover{
+    text-decoration: underline;
+}
+
+/* opcional */
+.temaImagenes p{
+    font-style: arial;
+}
+h1 {
+    font-size: 36px; 
+    color: #000000; 
+    text-align: center; 
+    margin: 30px 0; 
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+    font-weight: bold; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+.bannerImagenes2{
+    width: 100%;
+    height: 400px;
+    background: url(imagenes/inicio.jpg) no-repeat center/cover;
+    position: relative;
+    margin-bottom: 60px;
+}
+/*Nuevo baner imagen*/
+.bannerImagenes2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;/* Coloca esta capa sobre la imagen de fondo */
+}
+.bannerImagenes3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;/* Coloca esta capa sobre la imagen de fondo */
+}
+.bannerImagenes3{
+    width: 100%;
+    height: 400px;
+    background: url(imagenes/exito.jpg)
+    no-repeat center/cover;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+
+.bannerImagenes1 .contenido{
+    /* opcional */
+    /* width: 100%; */
+    /* padding: 10px 0 0 30px; */
+    /* color: grey; */
+    /* text-align: center; */
+    width: 40%;
+    padding: 90px 0 0 30px;
+    color: rgb(0, 0, 0);
+}
+.bannerImagenes2 .contenido{
+    /* opcional */
+    /* width: 100%; */
+    /* padding: 10px 0 0 30px; */
+    /* color: grey; */
+    /* text-align: center; */
+    position: relative; /* Asegura que el contenido esté por encima de la capa de opacidad */
+    z-index: 2; /* Coloca el contenido sobre la capa de opacidad */
+    color: white; /* Cambia el color del texto para que se destaque */
+    padding: 20px;   
+}
+
+
+.bannerImagenes3 .contenido{
+    /* opcional */
+    /* width: 100%; */
+    /* padding: 10px 0 0 30px; */
+    /* color: grey; */
+    /* text-align: center; */
+    
+
+    position: relative; /* Asegura que el contenido esté por encima de la capa de opacidad */
+    z-index: 2; /* Coloca el contenido sobre la capa de opacidad */
+    color: white; /* Cambia el color del texto para que se destaque */
+    padding: 20px; 
+}
+
+.contenido{
+    opacity: none;
+}
+
+.bannerImagenes1 h2,
+.bannerImagenes1 p,
+.bannerImagenes2 p{
+    margin: 10px 0 0 20px;
+    opacity: 100%;
+}
+.Social {
+    text-align: center; 
+    font-size: 30px;
+}
+
+.enlaceSocial {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 10px; 
+}
+.enlace-pie-pagina{
+    background: gainsboro;
+    color: dimgrey;
+    font-size: 12px;
+    padding: 35 0;
+}
+.contenidoPiePagina{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+}
+.contenidoPiePagina ul{
+    margin: 0 auto;
+}
+.contenidoPiePagina ul li{
+    line-height: 3;
+}
+.contenidoPiePagina ul li:hover{
+    text-decoration: underline;
+}
+.piePagina{
+    background: rgb(250, 0, 0);
+    color: rgb(250, 250, 250);
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1rem;
+    padding-bottom: 20px;
+    font-style: it;
+}
+.temaImagenes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin: 50px 0; /* Aumentamos el margen superior para más espacio en blanco */
+}
+
+.caso-exito {
+    padding: 20px;
+    border: 1px solid #eaeaea; /* Agregamos un borde suave */
+    background-color: #f9f9f9; /* Cambiamos el color de fondo para resaltar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agregamos una sombra suave */
+    transition: transform 0.2s; /* Agregamos una transición para efectos de interacción */
+}
+
+.caso-exito:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el mouse */
+}
+
+.caso-exito img {
+    width: 100%;
+    height: auto; /* Ajustamos la altura de la imagen automáticamente */
+}
+
+.caso-exito h3 {
+    font-size: 24px; /* Reducimos el tamaño de fuente para el título */
+    margin: 15px 0; /* Ajustamos el margen del título */
+}
+
+.caso-exito p {
+    text-align: justify;
+    margin-bottom: 10px; /* Añadimos un margen inferior al texto */
+}
+
+.caso-exito a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF; /* Cambiamos el color del botón */
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px; /* Agregamos bordes redondeados al botón */
+    text-decoration: none;
+}
+
+.caso-exito a:hover {
+    background-color: #ff0000; /* Cambiamos el color del botón al pasar el mouse */
+}
